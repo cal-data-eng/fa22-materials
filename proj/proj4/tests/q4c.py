@@ -1,9 +1,9 @@
 OK_FORMAT = True
 
 test = {   'name': 'q4c',
-    'points': 3,
+    'points': 2,
     'suites': [   {   'cases': [   {   'code': '>>> cur_test_4c = pickle.load(open("results/result_4c.p", "rb"))\n'
-                                               '>>> any([doc["name"] == "Talat Market" and "Thai" in doc for doc in cur_test_4c])\n'
+                                               ">>> cur_test_4c[0]['name'] == 'Asian Fusion Bowl' and cur_test_4c[0]['category'] == 'Street Vendors'\n"
                                                'True',
                                        'hidden': False,
                                        'locked': False}],
